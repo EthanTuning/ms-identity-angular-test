@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 import { LoginFormComponent } from './views/login-form/login-form.component';
 
 @Component({
