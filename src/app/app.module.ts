@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { FormsModule } from '@angular/forms';
+import { MsalModule } from '@azure/msal-angular';
 
 import { AppMaterialModule } from './app.material.module';
 
@@ -23,7 +24,8 @@ import { ConfirmationComponent } from './views/confirmation/confirmation.compone
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
-    AppMaterialModule
+    AppMaterialModule,
+    MsalModule
   ],
   providers: [],
   bootstrap: [AppComponent]

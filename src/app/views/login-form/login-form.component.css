@@ -1,0 +1,24 @@
+#login-form-card {
+    margin: 0 auto;
+    width: 25vw;
+}
+
+#login-form-card-content {
+    margin: 0 auto;
+}
+
+#login-form-card-content .input-field {
+    width: 100%;
+}
+
+#input-form-card-content button {
+    margin-right: 1em;
+}
+
+@media only screen and (max-width: 650px) {
+
+    #login-form-card {
+        width: 80vw;
+    }
+
+}
