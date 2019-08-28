@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthenticationService } from '../../services/authentication.service';
 
 @Component({
 
@@ -10,9 +11,14 @@ import { Component, OnInit } from '@angular/core';
 
 export class LoginFormComponent implements OnInit {
 
-  constructor() { }
+  title = 'Login';
+
+  constructor(private authService: AuthenticationService) { }
 
   ngOnInit() {
+
+
+
   }
 
 }
