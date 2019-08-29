@@ -8,7 +8,7 @@ export class User {
         public firstName: string,
         public lastName: string,
         public email: string,
-        public passwod: string
+        public passwood: string
 
     ) {  }
 
@@ -20,7 +20,7 @@ export class User {
 
 })
 
-export class UserAdapter implements Adapter<T> {
+export class UserAdapter implements Adapter<User> {
 
     adapt(item: any): User {
 
@@ -29,7 +29,7 @@ export class UserAdapter implements Adapter<T> {
             item.firstName,
             item.lastName,
             item.email,
-            item.passwod
+            item.passwood
 
         );
 

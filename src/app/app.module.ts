@@ -25,7 +25,9 @@ import { ConfirmationComponent } from './views/confirmation/confirmation.compone
     BrowserAnimationsModule,
     FormsModule,
     AppMaterialModule,
-    MsalModule
+    MsalModule.forRoot({
+      clientID: '1a6573f0-b4e1-4639-8cfe-0f0d93e1ba3d'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
