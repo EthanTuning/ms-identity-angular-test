@@ -13,23 +13,24 @@ export class AuthenticationService {
   loggedIn: boolean;
   user: User;
 
-  constructor(private msAuthService: MsalService) { }
+  constructor(private msalAuthService: MsalService) { }
 
   loginWithMsal() {
 
-
+    this.msalAuthService.loginPopup();
+    this.loggedIn = true;
 
   }
 
   loginWithOutMsal() {
 
 
-
   }
 
   logoutWithMsal() {
 
-
+    this.msalAuthService.logout();
+    this.loggedIn = false;
 
   }
 

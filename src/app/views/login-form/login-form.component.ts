@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthenticationService } from '../../services/authentication.service';
+import { Router } from '@angular/router';
 
 @Component({
 
@@ -13,7 +14,7 @@ export class LoginFormComponent implements OnInit {
 
   title = 'Login';
 
-  constructor(private authService: AuthenticationService) { }
+  constructor(private authService: AuthenticationService, private router: Router) { }
 
   ngOnInit() {
 
@@ -23,13 +24,14 @@ export class LoginFormComponent implements OnInit {
 
   loginWithMsal() {
 
-
+    this.authService.loginWithMsal();
+    this.router.navigate(['confirmation']);
 
   }
 
   loginWithOutMsal() {
 
-    
+
 
   }
 

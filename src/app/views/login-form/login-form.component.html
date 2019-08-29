@@ -11,8 +11,8 @@
                 <input matInput placeholder="Password" />
             </mat-form-field>
             <br/>
-            <button id="sign-in-btn"  mat-raised-button>Sign In</button>
-            <button id="sign-in-ms-btn" mat-raised-button>Sign In With Microsoft</button>
+            <button id="sign-in-btn" (click)="loginWithOutMsal()" mat-raised-button>Sign In</button>
+            <button id="sign-in-ms-btn" (click)="loginWithMsal()" mat-raised-button>Sign In With Microsoft</button>
         </mat-card-content>
     </mat-card>
 </section>
